@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数字ハンターゲーム</title>
+  <style>
+    .button {
+      position: absolute;
+      font-size: 20px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+
+    .timer, .score {
+      font-size: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer">残り時間: <span id="timer">30</span> 秒</div>
+  <div class="score">スコア: <span id="score">0</span></div>
+  <div id="gameContainer" class="container"></div>
+  <script src="game.js"></script>
+</body>
+</html>
